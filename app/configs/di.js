@@ -35,7 +35,6 @@ serviceLocator.register('userService', (serviceLocator) => {
 	const httpStatus = serviceLocator.get('httpStatus');
 	const errs = serviceLocator.get('errs');
 	const UserService = require('../services/user');
-
 	return new UserService(log, mongoose, httpStatus, errs);
 });
 
